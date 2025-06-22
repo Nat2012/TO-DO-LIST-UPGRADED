@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="To-do-list.css">
+</head>
+<body>
+    <div class="container">
+        <img src="Paper.jpg" alt="" class="Paper">
+        </svg>
+        <div class="text">
+            <h2>To-Do</h2>
+            <input type="text" id="taskInput" placeholder="Add a new task..." maxlength="50" onkeypress="if(event.key === 'Enter') addTask() ">
+            <p id="errorMessage">Please enter an item</p>
+            <button id="addTaskButton" onclick="addTask()">Add Task</button>
+            <button id="clearTasksButton" onclick="clearTasks()">Clear Tasks</button>
+            <ol id="taskList"></ol>
+        </div>
+    </div>
+    
+</body>
+<script src="To-do-list.js"></script>
+</html>
